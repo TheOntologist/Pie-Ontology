@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/Pie#"
+     xml:base="http://www.semanticweb.org/ontologies/Pie"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Pie="http://www.semanticweb.org/ontologies/Pie#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/Pie">
+        <rdfs:label>Pie Ontology</rdfs:label>
+        <rdfs:comment>An ontology of that which we call pie</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#ObjectProperty1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#ObjectProperty2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Pie#ObjectProperty2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Filling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class15"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class10">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class11">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pastry Pie Base</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class12">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full Pie</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class11"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class13"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class13"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class13 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class13">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pastry Pie Topping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class14 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class14">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mashed Potato Pie Topping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class15 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class16 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class16">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mashed Potato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class15"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class17 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class17">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">topping Only Pie</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class13"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/Pie#ObjectProperty1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Pie#Class11"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Base</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pastry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class15"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Pie#Class9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Pie#Class9">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savoury</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Pie#Class8"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
